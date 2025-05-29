@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Mobile from './components/Mobile';
 import PC from './components/PC';
 import Home from './components/home'; // We'll move your current main content into Home.js

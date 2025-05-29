@@ -1,6 +1,4 @@
 import bgImage from '../assets/bg.png';
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './project.css';
 function Mobile() {
 
