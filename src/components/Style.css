@@ -132,4 +132,60 @@ button img {
   transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left img {
+    width: 15em;
+  }
+
+  .project {
+    flex-direction: flex;
+    gap: 3em;
+    justify-content: center;
+    margin-left: 2em;
+  }
+
+  .mobile {
+    width: 12em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .buttons button {
+    width: 3.5em;
+  }
+
+  .left img {
+    width: 12em;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  .main p {
+    width: 95%;
+    font-size: 0.9em;
+  }
+}
+
 

@@ -1,5 +1,3 @@
-
-
 header{
     width: 100%;
     display: flex;
@@ -126,6 +124,67 @@ header h1{
 .video-container p {
   font-size: 1rem;
   color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-left: 1em;
+    margin-top: 2em;
+    gap: 4em;
+  }
+
+  .project_card1 {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project_card1 img {
+    width: 12em;
+    margin-bottom: 1em;
+  }
+
+  .project_card1 .little {
+    width: 6em;
+  }
+
+  .pc {
+    margin-left: 5%;
+  }
+
+  .pc .big {
+    width: 90%;
+  }
+
+  .video-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .card {
+    margin-left: 0.5em;
+    gap: 2em;
+  }
+
+  .project_card1 .little {
+    width: 5em;
+  }
+
+  .pc .little img {
+    width: 15em;
+  }
+
+  .video-container {
+    width: 95%;
+    margin-left: 2.5%;
+  }
 }
 
 
