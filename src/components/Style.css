@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.profile-img {
+  width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.buttons button {
+  width: 4.5em;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+button img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  padding: 40px;
+  width: 100%;
+
+}
+
+.main p{
+  width: 80%;
+}
+
+.project{
+ display: flex;
+ justify-content: center;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+}
+
+.left img {
+  width: 20em;
+}
+
+.right {
+  padding-top:4em;
+  width: 50%;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile{
+  width: 15em;
+  margin-top: 4em;
+   transition: transform 0.3s ease;
+}
+
+.project{
+  gap: 8em;
+}
+
+.mobile:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2em 1em;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer p {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.1);
+}
+
+

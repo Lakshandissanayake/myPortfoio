@@ -1,38 +1,90 @@
-.App {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.profile-img {
+  width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  width: 50%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button {
+  width: 4.5em;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  border: none;
+  cursor: pointer;
 }
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+button img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  padding: 40px;
+
+}
+
+.project{
+ display: flex;
+ justify-content: center;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+}
+
+.left img {
+  width: 20em;
+}
+
+.right {
+  padding-top:4em;
+  width: 50%;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile{
+  width: 15em;
+  margin-top: 4em;
+}
+
+.project{
+  gap: 8em;
+}
+
