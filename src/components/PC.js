@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './project.css';
 import videoDemo from '../assets/demo.mp4';
-
 
 function PC() {
   const images1 = [
@@ -32,14 +31,14 @@ function PC() {
       ref1.current = setTimeout(() => setIndex1((prev) => (prev + 1) % images1.length), delay);
     }
     return () => clearTimeout(ref1.current);
-  }, [index1, hover1]);
+  }, [index1, hover1, images1.length]); // ✅ Added images1.length
 
   useEffect(() => {
     if (!hover2) {
       ref2.current = setTimeout(() => setIndex2((prev) => (prev + 1) % images2.length), delay);
     }
     return () => clearTimeout(ref2.current);
-  }, [index2, hover2]);
+  }, [index2, hover2, images2.length]); // ✅ Added images2.length
 
   return (
     <>
@@ -79,8 +78,7 @@ function PC() {
           onMouseLeave={() => setHover2(false)}
         >
           <a
-            href="https://drive.google.com/drive/folders/1732bTDSnaqHFS7Y2ht1VC9OyCvKXLnHA?usp=sharing
-"
+            href="https://drive.google.com/drive/folders/1732bTDSnaqHFS7Y2ht1VC9OyCvKXLnHA?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -98,7 +96,6 @@ function PC() {
         </div>
       </div>
 
-
       <div className="pc video-container">
         <video
           autoPlay
@@ -114,7 +111,6 @@ function PC() {
         <h1>PROJECT PIXEL</h1>
         <p>This UI is for sharing Movie browsing, watching commenting webpage.</p>
       </div>
-
     </>
   );
 }
