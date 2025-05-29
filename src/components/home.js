@@ -36,9 +36,9 @@ function Home() {
       <div className="container reveal">
         <section>
           <h2>LAKSHAN DISSANAYAKE</h2>
-          <p>Iam adedicatedanddetail-orientedUI/UXdesignerwitha
-            strongfoundationinfront-enddevelopmentandapassion
-            forcreatinguser-centereddigitalexperiences</p>
+          <p>Iam a dedicated and detail-oriented UI/UX designer with a 
+            strong foundation in front-end development and a passion 
+            for creating user-centered digital experiences</p>
         </section>
 
         <section className="buttons">
